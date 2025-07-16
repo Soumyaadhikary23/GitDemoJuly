@@ -63,9 +63,7 @@ public class StandAloneTest {
 	driver.findElement(By.xpath("(//button[contains(@class,'ta-item')])[2]")).click();
 	Thread.sleep(2000);
 	driver.findElement(By.cssSelector(".action__submit")).click();
-	System.out.println("Successfully submitted 1st");
-	System.out.println("Successfully submitted 2nd");
-
+	System.out.println("Successfully submitted");
 	String confrimMessage=driver.findElement(By.cssSelector(".hero-primary")).getText();
 	Assert.assertTrue(confrimMessage.equalsIgnoreCase("Thankyou for the order."));	
 	}
