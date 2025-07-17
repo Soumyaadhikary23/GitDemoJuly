@@ -66,9 +66,13 @@ public class StandAloneTest {
 	System.out.println("Successfully submitted 1st");
 	System.out.println("Successfully submitted 2nd");
 	System.out.println("Successfully submitted 3rd");
+	System.out.println("Develop Successfully submitted 3rd");
+	System.out.println("17th July Develop Successfully submitted 3rd");
 
 
-	String confrimMessage=driver.findElement(By.cssSelector(".hero-primary")).getText();
+
+
+		String confrimMessage=driver.findElement(By.cssSelector(".hero-primary")).getText();
 	Assert.assertTrue(confrimMessage.equalsIgnoreCase("Thankyou for the order."));	
 	}
 
