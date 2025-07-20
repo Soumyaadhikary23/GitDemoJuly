@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumWeb.ErrorValidation">
+      <class name="SeleniumWeb.SubmitOrder">
         <methods>
-          <include name="sumbmitOrder"/>
+          <include name="sumbmitOrder" invocation-numbers="0 1"/>
           <include name="teardown"/>
+          <include name="orderHistoryTest"/>
           <include name="applicationLunch"/>
         </methods>
-      </class> <!-- SeleniumWeb.ErrorValidation -->
+      </class> <!-- SeleniumWeb.SubmitOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

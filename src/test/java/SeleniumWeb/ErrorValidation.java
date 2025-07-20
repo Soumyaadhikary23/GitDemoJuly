@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.sun.net.httpserver.Authenticator.Retry;
+
 import PageObject.CartPage;
 import PageObject.CheckOutPage;
 import PageObject.ConformationPage;
@@ -23,13 +25,30 @@ import TestComponent.BaseTest;
 
 public class ErrorValidation extends BaseTest {
 
-	@Test
-	public void sumbmitOrder() throws IOException {
+	@Test(groups= {"ErrorValidation"},retryAnalyzer=TestComponent.Retry.class)
+	public void loginErrorValidation() throws IOException {
 
 		
 
 		landingPage.logingApplication("soumyaadhikary2018@gmail.com", "Soumya23@");
-		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email  password.", landingPage.getErrorMessage());
+		
+	}
+	
+	
+	@Test
+	public void productErrorValidation() throws IOException, InterruptedException {
+
+		String productName = "ZARA COAT 3";
+
+		ProductCatalog productCatalog = landingPage.logingApplication("soumyaadhikary23@gmail.com", "Soumya123@");
+
+		productCatalog.getProductList();
+		productCatalog.addProductToCart(productName);
+		CartPage cartpage = productCatalog.goToCartPage();
+
+		Boolean match = cartpage.verifyCartproduct(productName);
+		Assert.assertTrue(match);
 		
 	}
 

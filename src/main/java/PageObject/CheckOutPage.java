@@ -47,7 +47,9 @@ public class CheckOutPage extends AbstractComponent {
 		
 	}
 	
-	public ConformationPage submitOrder() {
+	public ConformationPage submitOrder() throws InterruptedException
+	{	Thread.sleep(2000);
+		scrolluptoEnd();
 		submit.click();
 		ConformationPage conformPage=new ConformationPage(driver);
 		return conformPage;
