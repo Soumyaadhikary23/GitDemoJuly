@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-25T19:10:11 IST" name="Suite" finished-at="2025-07-25T19:10:46 IST" duration-ms="34661">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrder.sumbmitOrder(java.util.HashMap)[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" name="sumbmitOrder" class="SeleniumWeb.SubmitOrder"/>
+      </group> <!-- Purchase -->
+      <group name="ErrorValidation">
+        <method signature="ErrorValidation.loginErrorValidation()[pri:0, instance:SeleniumWeb.ErrorValidation@1c9b0314]" name="loginErrorValidation" class="SeleniumWeb.ErrorValidation"/>
+      </group> <!-- ErrorValidation -->
+    </groups>
+    <test started-at="2025-07-25T19:10:11 IST" name="Error Validation Test" finished-at="2025-07-25T19:10:25 IST" duration-ms="14015">
+      <class name="SeleniumWeb.ErrorValidation">
+        <test-method is-config="true" signature="applicationLunch()[pri:0, instance:SeleniumWeb.ErrorValidation@1c9b0314]" started-at="2025-07-25T19:10:11 IST" name="applicationLunch" finished-at="2025-07-25T19:10:16 IST" duration-ms="5020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationLunch -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:SeleniumWeb.ErrorValidation@1c9b0314]" started-at="2025-07-25T19:10:16 IST" name="loginErrorValidation" finished-at="2025-07-25T19:10:17 IST" duration-ms="961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumWeb.ErrorValidation@1c9b0314]" started-at="2025-07-25T19:10:17 IST" name="teardown" finished-at="2025-07-25T19:10:17 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="applicationLunch()[pri:0, instance:SeleniumWeb.ErrorValidation@1c9b0314]" started-at="2025-07-25T19:10:17 IST" name="applicationLunch" finished-at="2025-07-25T19:10:21 IST" duration-ms="3946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationLunch -->
+        <test-method signature="productErrorValidation()[pri:0, instance:SeleniumWeb.ErrorValidation@1c9b0314]" started-at="2025-07-25T19:10:21 IST" name="productErrorValidation" finished-at="2025-07-25T19:10:25 IST" duration-ms="3722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumWeb.ErrorValidation@1c9b0314]" started-at="2025-07-25T19:10:25 IST" name="teardown" finished-at="2025-07-25T19:10:25 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SeleniumWeb.ErrorValidation -->
+    </test> <!-- Error Validation Test -->
+    <test started-at="2025-07-25T19:10:11 IST" name="Submit Order Test" finished-at="2025-07-25T19:10:46 IST" duration-ms="34661">
+      <class name="SeleniumWeb.SubmitOrder">
+        <test-method is-config="true" signature="applicationLunch()[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:11 IST" name="applicationLunch" finished-at="2025-07-25T19:10:16 IST" duration-ms="4860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationLunch -->
+        <test-method signature="sumbmitOrder(java.util.HashMap)[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:16 IST" name="sumbmitOrder" data-provider="getData" finished-at="2025-07-25T19:10:26 IST" duration-ms="9343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Soumya123@, email=soumyaadhikary2018@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumbmitOrder -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:26 IST" name="teardown" finished-at="2025-07-25T19:10:26 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="applicationLunch()[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:26 IST" name="applicationLunch" finished-at="2025-07-25T19:10:30 IST" duration-ms="4250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationLunch -->
+        <test-method signature="sumbmitOrder(java.util.HashMap)[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:30 IST" name="sumbmitOrder" data-provider="getData" finished-at="2025-07-25T19:10:40 IST" duration-ms="9527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Soumya123@, email=soumyaadhikary23@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumbmitOrder -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:40 IST" name="teardown" finished-at="2025-07-25T19:10:40 IST" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="applicationLunch()[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:40 IST" name="applicationLunch" finished-at="2025-07-25T19:10:44 IST" duration-ms="3740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationLunch -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:44 IST" name="orderHistoryTest" finished-at="2025-07-25T19:10:46 IST" depends-on-methods="SeleniumWeb.SubmitOrder.sumbmitOrder" duration-ms="1618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumWeb.SubmitOrder@673fdbce]" started-at="2025-07-25T19:10:46 IST" name="teardown" finished-at="2025-07-25T19:10:46 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SeleniumWeb.SubmitOrder -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
