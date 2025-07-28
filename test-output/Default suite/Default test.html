@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 20 00:39:05 IST 2025</td>
+<td>Started on:</td><td>Sun Jul 27 14:26:22 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25349 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (690 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,20 +76,205 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SeleniumWeb.SubmitOrder.sumbmitOrder()'><b>sumbmitOrder</b><br>Test class: SeleniumWeb.SubmitOrder<br>Parameters: {password=Soumya123@, email=soumyaadhikary23@gmail.com, productName=ADIDAS ORIGINAL}</td>
-<td></td>
-<td>8</td>
-<td>SeleniumWeb.SubmitOrder@58ea606c</td></tr>
+<td title='Cucumber.TestNGTesRunner.runScenario()'><b>runScenario</b><br>Test class: Cucumber.TestNGTesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test for submiting the order", "Purchase the order from Ecormerce website"</td>
+<td><div><pre>io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for &apos;{expectedMessage} message displayed&apos;.
+It appears you did not register a parameter type.
+	at io.cucumber.core.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:99)
+	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:93)
+	at io.cucumber.core.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:61)
+	at io.cucumber.core.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:49)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:308)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:307)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 1:
+
+{expectedMessage} message displayed
+^---------------^
+Undefined parameter type &apos;expectedMessage&apos;.
+Please register a ParameterType for &apos;expectedMessage&apos;
+	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteParameter(CucumberExpression.java:96)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:54)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteExpression(CucumberExpression.java:111)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:56)
+	at io.cucumber.cucumberexpressions.CucumberExpression.&lt;init&gt;(CucumberExpression.java:39)
+	at io.cucumber.cucumberexpressions.ExpressionFactory.createExpression(ExpressionFactory.java:53)
+	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:88)
+	... 38 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace748006558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace748006558'><pre>io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for &apos;{expectedMessage} message displayed&apos;.
+It appears you did not register a parameter type.
+	at io.cucumber.core.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:99)
+	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:93)
+	at io.cucumber.core.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:61)
+	at io.cucumber.core.stepexpression.StepExpressionFactory.createExpression(StepExpressionFactory.java:49)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:308)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:307)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 1:
+
+{expectedMessage} message displayed
+^---------------^
+Undefined parameter type &apos;expectedMessage&apos;.
+Please register a ParameterType for &apos;expectedMessage&apos;
+	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteParameter(CucumberExpression.java:96)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:54)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1709)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteExpression(CucumberExpression.java:111)
+	at io.cucumber.cucumberexpressions.CucumberExpression.rewriteToRegex(CucumberExpression.java:56)
+	at io.cucumber.cucumberexpressions.CucumberExpression.&lt;init&gt;(CucumberExpression.java:39)
+	at io.cucumber.cucumberexpressions.ExpressionFactory.createExpression(ExpressionFactory.java:53)
+	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:88)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>Cucumber.TestNGTesRunner@6236eb5f</td></tr>
 <tr>
-<td title='SeleniumWeb.SubmitOrder.sumbmitOrder()'><b>sumbmitOrder</b><br>Test class: SeleniumWeb.SubmitOrder<br>Parameters: {password=Soumya123@, email=soumyaadhikary2018@gmail.com, productName=ZARA COAT 3}</td>
-<td></td>
-<td>8</td>
-<td>SeleniumWeb.SubmitOrder@58ea606c</td></tr>
-<tr>
-<td title='SeleniumWeb.SubmitOrder.orderHistoryTest()'><b>orderHistoryTest</b><br>Test class: SeleniumWeb.SubmitOrder</td>
-<td></td>
-<td>1</td>
-<td>SeleniumWeb.SubmitOrder@58ea606c</td></tr>
+<td title='Cucumber.TestNGTesRunner.runScenario()'><b>runScenario</b><br>Test class: Cucumber.TestNGTesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test for submiting the order", "Purchase the order from Ecormerce website"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I land on Ecomerce page&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I land on Ecomerce page&quot;)
+public void i_land_on_ecomerce_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;Login with the username soumyaadhikary23@gmail.com and password Soumya123@&quot;)
+public void login_with_the_username_soumyaadhikary23_gmail_com_and_password_soumya123() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I add the product ZARA COAT {int} to cart&quot;)
+public void i_add_the_product_zara_coat_to_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;checkout ZARA COAT {int} and submit the order&quot;)
+public void checkout_zara_coat_and_submit_the_order(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} message displayed on conformation page&quot;)
+public void message_displayed_on_conformation_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I land on Ecomerce page(file:///D:/Automation/Selenium/src/test/java/Cucumber/PurchaseOrder.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1381857776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1381857776'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I land on Ecomerce page&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I land on Ecomerce page&quot;)
+public void i_land_on_ecomerce_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given(&quot;Login with the username soumyaadhikary23@gmail.com and password Soumya123@&quot;)
+public void login_with_the_username_soumyaadhikary23_gmail_com_and_password_soumya123() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I add the product ZARA COAT {int} to cart&quot;)
+public void i_add_the_product_zara_coat_to_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;checkout ZARA COAT {int} and submit the order&quot;)
+public void checkout_zara_coat_and_submit_the_order(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;{string} message displayed on conformation page&quot;)
+public void message_displayed_on_conformation_page(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I land on Ecomerce page(file:///D:/Automation/Selenium/src/test/java/Cucumber/PurchaseOrder.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>Cucumber.TestNGTesRunner@6236eb5f</td></tr>
 </table><p>
 </body>
 </html>

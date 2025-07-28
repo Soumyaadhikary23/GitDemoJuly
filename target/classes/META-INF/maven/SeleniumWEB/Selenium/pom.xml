@@ -23,6 +23,19 @@
 			<version>7.11.0</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.26.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.26.0</version>
+</dependency>
 
 		<!--
 		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
@@ -51,6 +64,27 @@
 	</dependencies>
 
 	<profiles>
+	
+	
+	<profile>
+			<id>Cucumber Test</id>
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.0.0</version>
+							<configuration>
+								<includes>
+									<include>**/TestNGTesRunner.java</include>
+								</includes>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
+		</profile>
 
 
 		<profile>

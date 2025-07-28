@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumWeb.SubmitOrder">
+      <class name="Cucumber.TestNGTesRunner">
         <methods>
-          <include name="sumbmitOrder" invocation-numbers="0 1"/>
-          <include name="teardown"/>
-          <include name="orderHistoryTest"/>
-          <include name="applicationLunch"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- SeleniumWeb.SubmitOrder -->
+      </class> <!-- Cucumber.TestNGTesRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
